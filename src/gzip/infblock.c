@@ -389,4 +389,5 @@ z_streamp z )
   return Z_OK;
 }
 
-
+#undef exop
+#undef bits

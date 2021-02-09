@@ -335,6 +335,7 @@ typedef ptrdiff_t  FT_PtrDist;
 #define PIXEL_BITS  8
 
 #define ONE_PIXEL       ( 1 << PIXEL_BITS )
+#undef  TRUNC
 #define TRUNC( x )      (TCoord)( (x) >> PIXEL_BITS )
 #define FRACT( x )      (TCoord)( (x) & ( ONE_PIXEL - 1 ) )
 

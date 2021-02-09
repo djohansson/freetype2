@@ -448,6 +448,7 @@
 
 #define FLOOR( x )    ( (x) & -ras.precision )
 #define CEILING( x )  ( ( (x) + ras.precision - 1 ) & -ras.precision )
+#undef  TRUNC
 #define TRUNC( x )    ( (Long)(x) >> ras.precision_bits )
 #define FRAC( x )     ( (x) & ( ras.precision - 1 ) )
 
